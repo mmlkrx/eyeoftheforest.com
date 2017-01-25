@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <title>Eye of the Forest</title>
+    <%= stylesheet_link_tag :index %>
+    <!-- <%= javascript_include_tag :all %> -->
+  </head>
+
+  <body class="<%= page_classes %>" >
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
+</html>
