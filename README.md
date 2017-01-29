@@ -1,4 +1,4 @@
-# eyeoftheforest.de
+# eyeoftheforest.com
 
 Website for the short film [Eye of the Forest](https://facebook.com/eyeoftheforest).
 
