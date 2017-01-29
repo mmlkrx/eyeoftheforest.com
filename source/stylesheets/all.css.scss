@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@charset "utf-8";
+@import "normalize";
+@import "variables";
+@import "reset";
+
+// body {
+//   background-image: url(../images/background_index.jpg);
+//   background-position: center top;
+//   background-size: 100% auto;
+// }
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  background-image: url(../images/background_index.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  img {
+    width: 8em;
+    margin: auto;
+  }
+}
+
+.copy {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  h3 {
+    font-size: 2.5vw;
+    text-align: center;
+    letter-spacing: .2rem;
+    margin-bottom: .5rem;
+  }
+
+  p {
+    text-align: center;
+    letter-spacing: .04rem;
+  }
+}
+
+.email {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 3em;
+
+  form {
+    display: inline-flex;
+  }
+
+  #email {
+    padding: .7rem;
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0.25);
+    outline-color: $white;
+    outline-width: 1.5px;
+  }
+}
+
+.btn {
+  border: 0px;
+  background: $black;
+  color: $white;
+
+  &:hover {
+    background: black;
+  }
+}
+
+.teaser {
+  background: black;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 56%;
+  margin: auto;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: .04rem;
+
+  p {
+    margin: 3rem 0;
+  }
+
+  a {
+    margin-bottom: .5rem;
+  }
+}

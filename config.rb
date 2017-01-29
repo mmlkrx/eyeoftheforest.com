@@ -19,3 +19,9 @@ configure :build do
   activate :relative_assets
   set :relative_links, true
 end
+
+helpers do
+  def google_spreadsheet_url
+    "https://script.google.com/macros/s/AKfycbyiCdi65f765qKOzWQgupf_konDgAEg2sjTyRorDebY8tIjIxM/exec"
+  end
+end
