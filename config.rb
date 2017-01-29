@@ -22,6 +22,6 @@ end
 
 helpers do
   def google_spreadsheet_url
-    "https://script.google.com/macros/s/AKfycbyiCdi65f765qKOzWQgupf_konDgAEg2sjTyRorDebY8tIjIxM/exec"
+    "https://script.google.com/macros/s/AKfycby9AHgtMTNUy46CxJOl2TAYE3mCY6c_SbBq5XVwb2_l7BnNXzUP/exec"
   end
 end

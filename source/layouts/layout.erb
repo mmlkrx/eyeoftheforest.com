@@ -6,12 +6,13 @@
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
     <title>Eye of the Forest</title>
     <%= stylesheet_link_tag :all %>
-    <!-- <%= javascript_include_tag :all %> -->
   </head>
 
   <body class="<%= page_classes %>" >
     <div class="container">
       <%= yield %>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <%= javascript_include_tag :submit_email_from_form %>
   </body>
 </html>
