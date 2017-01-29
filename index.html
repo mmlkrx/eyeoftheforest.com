@@ -6,7 +6,6 @@
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
     <title>Eye of the Forest</title>
     <link href="stylesheets/all.css" rel="stylesheet" />
-    <!-- <script src="javascripts/all.js"></script> -->
   </head>
 
   <body class="index" >
@@ -18,8 +17,12 @@
   <h3>Eye of the Forest Movie</h3>
   <p>Please enter your email address to get access to the unreleased trailer</p>
 </section>
+<section class="teaser" style="display: none;">
+  <iframe src="https://player.vimeo.com/video/199317057?title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</section>
+<section id="pw" style="display: none;"><h3>Password: #EOTF</h3></section>
 <section class="email">
-  <form id="email_form" action="https://script.google.com/macros/s/AKfycbyiCdi65f765qKOzWQgupf_konDgAEg2sjTyRorDebY8tIjIxM/exec" class="form-inline">
+  <form id="email_form" action="https://script.google.com/macros/s/AKfycby9AHgtMTNUy46CxJOl2TAYE3mCY6c_SbBq5XVwb2_l7BnNXzUP/exec">
     <input id="email" class="form-control" name="email" type="email" placeholder="Email..." value="" />
     <input type="submit" value="Get access" class="btn"/>
   </form>
@@ -29,5 +32,7 @@
 </section>
 
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="javascripts/submit_email_from_form.js"></script>
   </body>
 </html>
