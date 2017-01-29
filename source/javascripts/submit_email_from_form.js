@@ -16,10 +16,10 @@ $(document).ready(function() {
       url: $(form).attr('action'),
       data: formData
       }).done(function(response) {
-        $('.logo').fadeOut();
-        $('.copy').fadeOut();
-        $('.email').fadeOut();
-        $('.social-media').fadeOut();
+        $('.logo').hide();
+        $('.copy').hide();
+        $('.email').hide();
+        $('.social-media').hide();
         $('.teaser').fadeIn();
         $('#pw').fadeIn();
         $('.container').css('background-color', '#000000');
