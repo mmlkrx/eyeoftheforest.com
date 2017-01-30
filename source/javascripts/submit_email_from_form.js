@@ -22,8 +22,10 @@ $(document).ready(function() {
           $('.email').hide();
           $('.social-media').hide();
           $('.teaser').fadeIn();
-          $('input[type=password]').value = '#EOTF';
-          $('input[type=submit]').click();
+          setInterval(function(){
+            $('input[type=password]').value = '#EOTF';
+            $('input[type=submit]').click();
+          }, 100);
         });
     }
   });
