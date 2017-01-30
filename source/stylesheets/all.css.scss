@@ -78,10 +78,13 @@
   &:hover {
     background: black;
   }
+}
 
-  &:focus {
-    outline: none;
-  }
+#pw {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .teaser {
