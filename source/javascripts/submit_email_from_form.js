@@ -7,14 +7,15 @@ $(document).ready(function() {
     // Stop the browser from submitting the form.
     event.preventDefault();
 
-    // Serialize the form data.
-    var formData = $(form).serialize();
+    if ($('#email').val() !== '') {
+      // Serialize the form data.
+      var formData = $(form).serialize();
 
-    // Submit the form using AJAX.
-    $.ajax({
-      type: 'POST',
-      url: $(form).attr('action'),
-      data: formData
+      // Submit the form using AJAX.
+      $.ajax({
+        type: 'POST',
+        url: $(form).attr('action'),
+        data: formData
       }).done(function(response) {
         $('.logo').hide();
         $('.copy').hide();
@@ -25,5 +26,6 @@ $(document).ready(function() {
         $('.container').css('background-color', '#000000');
         $('.container').css('background-image', 'none');
       });
-    });
+    }
+  });
 });
