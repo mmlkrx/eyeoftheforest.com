@@ -17,14 +17,8 @@ $(document).ready(function() {
         url: $(form).attr('action'),
         data: formData
       }).done(function(response) {
-        $('.logo').hide();
-        $('.copy').hide();
-        $('.email').hide();
-        $('.social-media').hide();
-        $('.teaser').fadeIn();
-        $('#pw').fadeIn();
-        $('.container').css('background-color', '#000000');
-        $('.container').css('background-image', 'none');
+        $('#email').val('');
+        alert("Thank you!");
       });
     }
   });
